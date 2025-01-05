@@ -1,5 +1,5 @@
 import sys
-from tiffprocessor import copy_tiff_low_level
+from tiff_wsi_label_removal.tiffprocessor import copy_tiff_low_level
 
 def main():
     if len(sys.argv) != 3:
