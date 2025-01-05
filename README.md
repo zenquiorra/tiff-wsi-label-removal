@@ -22,7 +22,7 @@ In many Whole Slide Imaging (WSI) workflows—particularly within pathology or c
 
 ## Install using pip:
 
-* `pip install tiff-wsi-label-removal==0.1.4`
+* `pip install tiff-wsi-label-removal`
 
 ## Alternatively, install from source:
 
@@ -45,7 +45,7 @@ You can use the script **directly** or via the  **installed CLI** .
 
 ### CLI usage (if installed)
 
-If you have installed this package locally (via `pip install .` or through `pip install tiff-wsi-label-removal==0.1.4`), then run:
+If you have installed this package locally (via `pip install .` or through `pip install tiff-wsi-label-removal`), then run:
 
 ```bash
 remove-label <input_tiff_file> <output_tiff_file>
@@ -57,24 +57,24 @@ Example:
 remove-label sample_input.tiff sample_output.tiff
 ```
 
-Inside a python script (if installed)
+### Inside a python script (if installed)
 
-```python
-  from tiff_wsi_label_removal.tiffprocessor import copy_tiff_low_level
-  copy_tiff_low_level(input_file_path, output_file_path)
-```
+  ```python
+    from tiff_wsi_label_removal.tiffprocessor import copy_tiff_low_level
+    copy_tiff_low_level(input_file_path, output_file_path)
+  ```
 
-### Direct usage
+### Direct usage from source (if requirements are installed)
 
-```bash
-python remove_label.py <input_tiff_file> <output_tiff_file>
-```
-
-Example:
-
-```bash
-python remove_label.py sample_input.tiff sample_output.tiff
-```
+  ```bash
+  python remove_label.py <input_tiff_file> <output_tiff_file>
+  ```
+  
+  Example:
+  
+  ```bash
+  python remove_label.py sample_input.tiff sample_output.tiff
+  ```
 
 ## How It Works
 
